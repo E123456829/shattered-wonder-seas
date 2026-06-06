@@ -99,6 +99,9 @@ recommended after updating the mod.
 
 See [CHANGELOG.md](CHANGELOG.md) for the reconstructed version history.
 
+For portfolio and interview context, including the AI-assisted development
+disclosure I would use, see [PORTFOLIO_NOTES.md](PORTFOLIO_NOTES.md).
+
 ## Repository Layout
 
 ```text
