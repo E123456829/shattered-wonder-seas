@@ -14,6 +14,15 @@ natural-wonder placement data, then layers additional terrain stabilization logi
 to keep starts, rivers, terrain, and natural-wonder footprints reliable across
 game generation.
 
+## Screenshots
+
+These screenshots show the in-game setup entries used while testing the custom
+maps and YnAMP options.
+
+![Shattered Wonder Seas setup](docs/screenshots/settings-shattered-wonder-seas-2026-06-03.png)
+
+![Twin Discovery Wonder Seas setup](docs/screenshots/settings-twin-discovery-wonder-seas-2026-06-06.png)
+
 ## Highlights
 
 - Massive 128x80 fixed map for Civilization VII.
@@ -43,6 +52,30 @@ game generation.
 - Debugged save/load dependency issues caused by optional DLC modules being treated
   as hard mod dependencies.
 
+## Design Notes
+
+The design target was not a balanced Earth replacement. It was a directed
+scenario map built around a specific early-game fantasy: Isabella starts on a
+central island with unusually dense natural-wonder access, but the rest of the
+world still needs to feel like a real strategic space instead of a decorative
+showcase.
+
+The final layout uses three layers of constraint:
+
+- The home island is intentionally rich, irregular, and navigable, with shallow
+  access to one continent so the player has early contact and expansion pressure.
+- The second continent is separated by deep ocean so it becomes an exploration-era
+  discovery rather than an immediate ancient-era neighbor.
+- AI starts are steered onto the two large continents so most opponents develop
+  normal mainland economies while the player begins from a more unusual island
+  position.
+
+Most tuning work went into making the map hold its shape after Civ VII and YnAMP
+applied their own terrain validation, feature placement, river, coast, resource,
+and start-position systems. The natural-wonder placement code is therefore more
+defensive than decorative: several passes exist only to keep engine placement
+rules from silently moving or rejecting curated wonders.
+
 ## Installation
 
 Install YnAMP for Civilization VII first.
@@ -63,6 +96,8 @@ After launching the game, enable the mod and select one of the added maps:
 The current build is playable and tuned for a 10-player massive map setup. Old
 save files may retain earlier mod dependency metadata, so new test games are
 recommended after updating the mod.
+
+See [CHANGELOG.md](CHANGELOG.md) for the reconstructed version history.
 
 ## Repository Layout
 
