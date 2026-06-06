@@ -1,0 +1,13 @@
+# OS and editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local scratch and generated files
+*.log
+*.tmp
+*.bak
+
+# Accidental empty scratch file from local command testing.
+\!\['CIVILIZATION_SPAIN'

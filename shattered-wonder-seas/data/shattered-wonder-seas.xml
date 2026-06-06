@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<StartPosition>
+		<!-- Wonder island starts. YnAMP's current TSL code keys primarily by Civilization. -->
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_SPAIN" X="31" Y="42" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_NEPAL" X="43" Y="45" UnlockRadius="4"/>
+		<!-- Kept for future/alternate YnAMP builds that also read Leader-specific TSL rows. -->
+		<Replace MapName="ShatteredWonderSeas" Leader="LEADER_ISABELLA" X="31" Y="42" UnlockRadius="4"/>
+
+		<!-- All other installed civilizations are steered onto the irregular mainland. -->
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_AKSUM" X="66" Y="31" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_EGYPT" X="73" Y="29" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_GREECE" X="80" Y="28" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_HAN" X="88" Y="27" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_KHMER" X="97" Y="29" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_MAURYA" X="105" Y="32" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_MAYA" X="112" Y="39" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_MISSISSIPPIAN" X="69" Y="40" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_PERSIA" X="77" Y="35" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_ROME" X="89" Y="36" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_ABBASID" X="101" Y="39" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_ASSYRIA" X="110" Y="48" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_BULGARIA" X="68" Y="51" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_CARTHAGE" X="77" Y="52" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_CHOLA" X="86" Y="54" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_DAI_VIET" X="96" Y="52" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_HAWAII" X="106" Y="57" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_INCA" X="74" Y="60" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_MAJAPAHIT" X="84" Y="63" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_MING" X="95" Y="64" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_MONGOLIA" X="67" Y="62" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_NORMAN" X="66" Y="44" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_OTTOMANS" X="72" Y="46" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_PIRATE_REPUBLIC" X="92" Y="44" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_SHAWNEE" X="101" Y="47" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_SILLA" X="114" Y="52" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_SONGHAI" X="91" Y="22" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_TONGA" X="78" Y="21" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_AMERICA" X="94" Y="21" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_BUGANDA" X="116" Y="45" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_FRENCH_EMPIRE" X="65" Y="57" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_MEXICO" X="70" Y="24" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_MUGHAL" X="82" Y="24" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_MEIJI" X="93" Y="60" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_PRUSSIA" X="101" Y="60" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_QAJAR" X="99" Y="34" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_QING" X="74" Y="67" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_RUSSIA" X="63" Y="36" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_SIAM" X="114" Y="29" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_GREAT_BRITAIN" X="88" Y="66" UnlockRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" Civilization="CIVILIZATION_ICELAND" X="116" Y="50" UnlockRadius="4"/>
+	</StartPosition>
+
+	<NaturalWonderPosition>
+		<!-- Main island wonders. -->
+		<Replace MapName="ShatteredWonderSeas" X="32" Y="41" FeatureType="FEATURE_MACHAPUCHARE" SearchRadius="1"/>
+		<Replace MapName="ShatteredWonderSeas" X="40" Y="38" FeatureType="FEATURE_VIHREN" SearchRadius="2"/>
+		<Replace MapName="ShatteredWonderSeas" X="25" Y="43" FeatureType="FEATURE_MAPU_A_VAEA_BLOWHOLES" PreservePlacementRule="1" Direction="5" SearchRadius="8"/>
+		<Replace MapName="ShatteredWonderSeas" X="35" Y="49" FeatureType="FEATURE_KILIMANJARO" SearchRadius="2"/>
+		<Replace MapName="ShatteredWonderSeas" X="45" Y="44" FeatureType="FEATURE_REDWOOD_FOREST" SearchRadius="2"/>
+		<Replace MapName="ShatteredWonderSeas" X="30" Y="35" FeatureType="FEATURE_VINICUNCA" Direction="0" SearchRadius="2"/>
+		<Replace MapName="ShatteredWonderSeas" X="42" Y="51" FeatureType="FEATURE_ZHANGJIAJIE" SearchRadius="2"/>
+
+		<!-- Four distant Exploration-era target islands. -->
+		<Replace MapName="ShatteredWonderSeas" X="16" Y="64" FeatureType="FEATURE_HOERIKWAGGO" SearchRadius="3"/>
+		<Replace MapName="ShatteredWonderSeas" X="108" Y="64" FeatureType="FEATURE_MOUNT_EVEREST" Direction="0" SearchRadius="3"/>
+		<Replace MapName="ShatteredWonderSeas" X="107" Y="19" FeatureType="FEATURE_MOUNT_FUJI" Direction="1" SearchRadius="2"/>
+		<Replace MapName="ShatteredWonderSeas" X="18" Y="16" FeatureType="FEATURE_TORRES_DEL_PAINE" SearchRadius="2"/>
+
+		<!-- Mainland and sea wonders distributed across the larger fractured world. -->
+		<Replace MapName="ShatteredWonderSeas" X="92" Y="27" FeatureType="FEATURE_BARRIER_REEF" PreservePlacementRule="1" SearchRadius="6"/>
+		<Replace MapName="ShatteredWonderSeas" X="69" Y="29" FeatureType="FEATURE_VALLEY_OF_FLOWERS" SearchRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" X="83" Y="52" FeatureType="FEATURE_GRAND_CANYON" SearchRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" X="71" Y="22" FeatureType="FEATURE_GULLFOSS" PreservePlacementRule="1" SearchRadius="6"/>
+		<Replace MapName="ShatteredWonderSeas" X="95" Y="57" FeatureType="FEATURE_IGUAZU_FALLS" PreservePlacementRule="1" SearchRadius="6"/>
+		<Replace MapName="ShatteredWonderSeas" X="64" Y="34" FeatureType="FEATURE_THERA" PreservePlacementRule="1" SearchRadius="6"/>
+		<Replace MapName="ShatteredWonderSeas" X="99" Y="47" FeatureType="FEATURE_ULURU" SearchRadius="4"/>
+		<Replace MapName="ShatteredWonderSeas" X="118" Y="39" FeatureType="FEATURE_BERMUDA_TRIANGLE" PreservePlacementRule="1" SearchRadius="8"/>
+		<Replace MapName="ShatteredWonderSeas" X="54" Y="42" FeatureType="FEATURE_GREAT_BLUE_HOLE" PreservePlacementRule="1" SearchRadius="6"/>
+	</NaturalWonderPosition>
+</Database>

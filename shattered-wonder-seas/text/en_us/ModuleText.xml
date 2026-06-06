@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Replace Tag="LOC_MODULE_SHATTERED_WONDER_SEAS_NAME">
+			<Text>Shattered Wonder Seas</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_SHATTERED_WONDER_SEAS_DESCRIPTION">
+			<Text>A massive YnAMP fixed map for Civilization VII built around fractured oceans, isolated Spain/Nepal starts, and curated natural wonder islands.</Text>
+		</Replace>
+	</EnglishText>
+</Database>

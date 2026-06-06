@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Replace Tag="LOC_MAP_SHATTERED_WONDER_SEAS_NAME">
+			<Text>Shattered Wonder Seas</Text>
+		</Replace>
+		<Replace Tag="LOC_MAP_SHATTERED_WONDER_SEAS_DESCRIPTION">
+			<Text>Massive fractured-seas map: Isabella and Nepal start on a lake-dotted island with desert and tropical terrain, linked by shallow seas to an irregular mainland and distant wonder islands.</Text>
+		</Replace>
+		<Replace Tag="LOC_MAP_TWIN_DISCOVERY_WONDER_SEAS_NAME">
+			<Text>Twin Discovery Wonder Seas</Text>
+		</Replace>
+		<Replace Tag="LOC_MAP_TWIN_DISCOVERY_WONDER_SEAS_DESCRIPTION">
+			<Text>Massive two-continent map: Isabella starts on a central wonder island between the continents, shallow-linked to the west while the east waits beyond deep ocean exploration.</Text>
+		</Replace>
+		<Replace Tag="LOC_SWS_NW_PLACEMENT_MODE_NAME">
+			<Text>Natural Wonder Placement</Text>
+		</Replace>
+		<Replace Tag="LOC_SWS_NW_PLACEMENT_MODE_DESC">
+			<Text>Controls how YnAMP handles the natural wonder positions curated for this map.</Text>
+		</Replace>
+		<Replace Tag="LOC_SWS_CIVILIZATION_TSL_NAME">
+			<Text>Civilization TSL</Text>
+		</Replace>
+		<Replace Tag="LOC_SWS_CIVILIZATION_TSL_DESC">
+			<Text>Uses the island start positions curated for Spain/Isabella and Nepal on this map.</Text>
+		</Replace>
+	</EnglishText>
+</Database>

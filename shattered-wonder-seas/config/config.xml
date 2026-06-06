@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<Maps>
+		<Row File="{codex-shattered-wonder-seas}maps/shattered-wonder-seas-map.js" Name="LOC_MAP_SHATTERED_WONDER_SEAS_NAME" Description="LOC_MAP_SHATTERED_WONDER_SEAS_DESCRIPTION" SortIndex="930"/>
+		<Row File="{codex-shattered-wonder-seas}maps/twin-discovery-wonder-seas-map.js" Name="LOC_MAP_TWIN_DISCOVERY_WONDER_SEAS_NAME" Description="LOC_MAP_TWIN_DISCOVERY_WONDER_SEAS_DESCRIPTION" SortIndex="931"/>
+	</Maps>
+	<Parameters>
+		<Row Key1="Map" Key2="{codex-shattered-wonder-seas}maps/shattered-wonder-seas-map.js" ParameterID="NWPlacementMode" Name="LOC_SWS_NW_PLACEMENT_MODE_NAME" Description="LOC_SWS_NW_PLACEMENT_MODE_DESC" Domain="YnAMPNWPlacementModes" Hash="1" DefaultValue="YNAMP_NW_PLACEMENT_REAL_ONLY" ConfigurationGroup="Map" ConfigurationKey="NWPlacementMode" GroupId="MapOptions" SortIndex="2010"/>
+		<Row Key1="Map" Key2="{codex-shattered-wonder-seas}maps/shattered-wonder-seas-map.js" ParameterID="CivilizationTSL" Name="LOC_SWS_CIVILIZATION_TSL_NAME" Description="LOC_SWS_CIVILIZATION_TSL_DESC" Domain="bool" Hash="0" DefaultValue="1" ConfigurationGroup="Map" ConfigurationKey="CivilizationTSL" GroupId="MapOptions" SortIndex="121"/>
+		<Row Key1="Map" Key2="{codex-shattered-wonder-seas}maps/twin-discovery-wonder-seas-map.js" ParameterID="NWPlacementMode" Name="LOC_SWS_NW_PLACEMENT_MODE_NAME" Description="LOC_SWS_NW_PLACEMENT_MODE_DESC" Domain="YnAMPNWPlacementModes" Hash="1" DefaultValue="YNAMP_NW_PLACEMENT_REAL_ONLY" ConfigurationGroup="Map" ConfigurationKey="NWPlacementMode" GroupId="MapOptions" SortIndex="2010"/>
+		<Row Key1="Map" Key2="{codex-shattered-wonder-seas}maps/twin-discovery-wonder-seas-map.js" ParameterID="CivilizationTSL" Name="LOC_SWS_CIVILIZATION_TSL_NAME" Description="LOC_SWS_CIVILIZATION_TSL_DESC" Domain="bool" Hash="0" DefaultValue="1" ConfigurationGroup="Map" ConfigurationKey="CivilizationTSL" GroupId="MapOptions" SortIndex="121"/>
+	</Parameters>
+	<SupportedValuesByMap>
+		<Row Map="{codex-shattered-wonder-seas}maps/shattered-wonder-seas-map.js" Domain="StandardMapSizes" Value="MAPSIZE_MASSIVE"/>
+		<Row Map="{codex-shattered-wonder-seas}maps/shattered-wonder-seas-map.js" Domain="DistantLandsMapSizes" Value="MAPSIZE_MASSIVE"/>
+		<Row Map="{codex-shattered-wonder-seas}maps/shattered-wonder-seas-map.js" Domain="StandardMapStartPositions" Value="START_POSITION_REGION"/>
+		<Row Map="{codex-shattered-wonder-seas}maps/shattered-wonder-seas-map.js" Domain="StandardMapStartPositions" Value="START_POSITION_RELATIVE_DISTANCE"/>
+		<Row Map="{codex-shattered-wonder-seas}maps/twin-discovery-wonder-seas-map.js" Domain="StandardMapSizes" Value="MAPSIZE_MASSIVE"/>
+		<Row Map="{codex-shattered-wonder-seas}maps/twin-discovery-wonder-seas-map.js" Domain="DistantLandsMapSizes" Value="MAPSIZE_MASSIVE"/>
+		<Row Map="{codex-shattered-wonder-seas}maps/twin-discovery-wonder-seas-map.js" Domain="StandardMapStartPositions" Value="START_POSITION_REGION"/>
+		<Row Map="{codex-shattered-wonder-seas}maps/twin-discovery-wonder-seas-map.js" Domain="StandardMapStartPositions" Value="START_POSITION_RELATIVE_DISTANCE"/>
+	</SupportedValuesByMap>
+</Database>

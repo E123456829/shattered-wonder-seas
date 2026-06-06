@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<LocalizedText>
+		<Replace Tag="LOC_MODULE_SHATTERED_WONDER_SEAS_NAME" Language="zh_Hans_CN">
+			<Text>破碎奇观海</Text>
+		</Replace>
+		<Replace Tag="LOC_MODULE_SHATTERED_WONDER_SEAS_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>为《文明 VII》制作的 YnAMP 固定地图模组，包含破碎海域、手工出生点、双大陆布局和预设自然奇观岛屿。</Text>
+		</Replace>
+	</LocalizedText>
+</Database>

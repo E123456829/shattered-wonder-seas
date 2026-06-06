@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<LocalizedText>
+		<Replace Tag="LOC_MAP_SHATTERED_WONDER_SEAS_NAME" Language="zh_Hans_CN">
+			<Text>破碎奇观海</Text>
+		</Replace>
+		<Replace Tag="LOC_MAP_SHATTERED_WONDER_SEAS_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>巨型破碎海域地图：伊莎贝拉与尼泊尔出生在包含湖泊、沙漠和热带地形的孤岛，浅海连接一片不规则主大陆，远海分布自然奇观岛屿。</Text>
+		</Replace>
+		<Replace Tag="LOC_MAP_TWIN_DISCOVERY_WONDER_SEAS_NAME" Language="zh_Hans_CN">
+			<Text>双陆奇观海</Text>
+		</Replace>
+		<Replace Tag="LOC_MAP_TWIN_DISCOVERY_WONDER_SEAS_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>巨型双大陆地图：伊莎贝拉出生在两片大陆之间的奇观孤岛，浅海连接西大陆，东大陆需要探索时代远洋航行抵达。</Text>
+		</Replace>
+		<Replace Tag="LOC_SWS_NW_PLACEMENT_MODE_NAME" Language="zh_Hans_CN">
+			<Text>自然奇观放置</Text>
+		</Replace>
+		<Replace Tag="LOC_SWS_NW_PLACEMENT_MODE_DESC" Language="zh_Hans_CN">
+			<Text>控制 YnAMP 如何处理此地图预设的自然奇观位置。</Text>
+		</Replace>
+		<Replace Tag="LOC_SWS_CIVILIZATION_TSL_NAME" Language="zh_Hans_CN">
+			<Text>文明真实出生点</Text>
+		</Replace>
+		<Replace Tag="LOC_SWS_CIVILIZATION_TSL_DESC" Language="zh_Hans_CN">
+			<Text>启用后，使用此地图为伊莎贝拉及其他文明预设的出生位置。</Text>
+		</Replace>
+	</LocalizedText>
+</Database>

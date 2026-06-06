@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<StartPosition>
+		<!-- Isabella-focused starts. YnAMP currently keys TSL mainly by Civilization, so common Isabella pairings are listed here. -->
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_SPAIN" X="61" Y="41" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_NEPAL" X="61" Y="41" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_INCA" X="61" Y="41" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Leader="LEADER_ISABELLA" X="61" Y="41" UnlockRadius="4"/>
+
+		<!-- AI civilization starts are spread across the two main continents, avoiding the central island and satellites. -->
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_AKSUM" X="30" Y="27" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_EGYPT" X="36" Y="29" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_GREECE" X="22" Y="53" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_ROME" X="42" Y="55" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_MAYA" X="33" Y="64" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_MISSISSIPPIAN" X="27" Y="39" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_HAN" X="103" Y="28" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_KHMER" X="111" Y="31" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_MAURYA" X="95" Y="55" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_PERSIA" X="114" Y="57" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_ABBASID" X="12" Y="18" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_AMERICA" X="100" Y="20" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_ASSYRIA" X="27" Y="23" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_BUGANDA" X="117" Y="20" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_BULGARIA" X="34" Y="23" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_CARTHAGE" X="106" Y="24" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_CHOLA" X="43" Y="23" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_DAI_VIET" X="113" Y="26" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_FRENCH_EMPIRE" X="16" Y="24" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_GREAT_BRITAIN" X="100" Y="29" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_HAWAII" X="21" Y="29" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_ICELAND" X="107" Y="31" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_MAJAPAHIT" X="47" Y="29" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_MEIJI" X="117" Y="32" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_MEXICO" X="29" Y="30" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_MING" X="94" Y="33" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_MONGOLIA" X="36" Y="30" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_MUGHAL" X="101" Y="36" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_NORMAN" X="17" Y="35" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_OTTOMANS" X="111" Y="37" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_PIRATE_REPUBLIC" X="24" Y="36" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_PRUSSIA" X="102" Y="43" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_QAJAR" X="31" Y="37" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_QING" X="109" Y="44" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_RUSSIA" X="12" Y="41" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_SHAWNEE" X="105" Y="50" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_SIAM" X="19" Y="42" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_SILLA" X="117" Y="50" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_SONGHAI" X="46" Y="42" UnlockRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" Civilization="CIVILIZATION_TONGA" X="111" Y="54" UnlockRadius="4"/>
+	</StartPosition>
+
+	<NaturalWonderPosition>
+		<!-- Isabella's central island wonders. -->
+		<Replace MapName="TwinDiscoveryWonderSeas" X="62" Y="39" FeatureType="FEATURE_MACHAPUCHARE" Direction="0" SearchRadius="2"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="79" Y="42" FeatureType="FEATURE_VIHREN" Direction="1" SearchRadius="2"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="52" Y="47" FeatureType="FEATURE_MAPU_A_VAEA_BLOWHOLES" Direction="5" SearchRadius="4"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="51" Y="47" FeatureType="FEATURE_MAPU_A_VAEA_BLOWHOLES" TerrainType="TERRAIN_COAST"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="52" Y="48" FeatureType="FEATURE_MAPU_A_VAEA_BLOWHOLES" TerrainType="TERRAIN_COAST"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="53" Y="47" FeatureType="FEATURE_MAPU_A_VAEA_BLOWHOLES" TerrainType="TERRAIN_COAST"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="62" Y="50" FeatureType="FEATURE_KILIMANJARO" Direction="3" SearchRadius="1"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="74" Y="51" FeatureType="FEATURE_REDWOOD_FOREST" Direction="0" SearchRadius="1"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="53" Y="34" FeatureType="FEATURE_VINICUNCA" Direction="0" SearchRadius="2"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="72" Y="34" FeatureType="FEATURE_ZHANGJIAJIE" Direction="2" SearchRadius="2"/>
+
+		<!-- Other natural wonders sit on the central island or small shallow-linked islands around it. -->
+		<Replace MapName="TwinDiscoveryWonderSeas" X="52" Y="64" FeatureType="FEATURE_HOERIKWAGGO" Direction="0" SearchRadius="2"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="80" Y="66" FeatureType="FEATURE_MOUNT_EVEREST" Direction="0" SearchRadius="2"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="78" Y="22" FeatureType="FEATURE_MOUNT_FUJI" Direction="1" SearchRadius="2"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="54" Y="22" FeatureType="FEATURE_TORRES_DEL_PAINE" Direction="2" SearchRadius="2"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="79" Y="58" FeatureType="FEATURE_BARRIER_REEF" Direction="2" SearchRadius="3"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="66" Y="23" FeatureType="FEATURE_VALLEY_OF_FLOWERS" Direction="0" SearchRadius="2"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="74" Y="69" FeatureType="FEATURE_GRAND_CANYON" Direction="0" SearchRadius="2"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="58" Y="58" FeatureType="FEATURE_IGUAZU_FALLS" SearchRadius="2"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="66" Y="62" FeatureType="FEATURE_THERA" Direction="4" SearchRadius="3"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="65" Y="62" FeatureType="FEATURE_THERA" TerrainType="TERRAIN_COAST"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="66" Y="63" FeatureType="FEATURE_THERA" TerrainType="TERRAIN_COAST"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="67" Y="62" FeatureType="FEATURE_THERA" TerrainType="TERRAIN_COAST"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="67" Y="63" FeatureType="FEATURE_THERA" TerrainType="TERRAIN_COAST"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="65" Y="70" FeatureType="FEATURE_ULURU" SearchRadius="2"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="69" Y="76" FeatureType="FEATURE_BERMUDA_TRIANGLE" Direction="0" SearchRadius="5"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="68" Y="76" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="69" Y="75" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="70" Y="76" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="69" Y="77" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="58" Y="69" FeatureType="FEATURE_GREAT_BLUE_HOLE" SearchRadius="3"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="57" Y="69" FeatureType="FEATURE_GREAT_BLUE_HOLE" TerrainType="TERRAIN_COAST"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="58" Y="68" FeatureType="FEATURE_GREAT_BLUE_HOLE" TerrainType="TERRAIN_COAST"/>
+		<Replace MapName="TwinDiscoveryWonderSeas" X="59" Y="69" FeatureType="FEATURE_GREAT_BLUE_HOLE" TerrainType="TERRAIN_COAST"/>
+	</NaturalWonderPosition>
+</Database>
