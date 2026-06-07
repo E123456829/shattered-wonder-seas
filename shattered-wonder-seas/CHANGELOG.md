@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.5
+
+- Replaced the resource-blocking city-state mitigation with database tuning for
+  independent military units.
+- Kept independent defenders at 1 unit and lowered scout, combat, naval, and
+  crisis unit caps to very small groups.
+- Removed the resource blocker pass so the map no longer gains artificial
+  resource clutter around the wonder island and natural wonders.
+
 ## v0.4
 
 - Added a post-generation exclusion pass for the Twin Discovery Wonder Seas map.

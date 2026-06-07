@@ -9,28 +9,12 @@ import { assignAdvancedStartRegions } from '/base-standard/maps/assign-advanced-
 import {
     CITY_STATE_EXCLUSION_RADIUS,
     CITY_STATE_EXCLUSION_WONDERS,
-    CITY_STATE_EXCLUSION_ZONES,
     CITY_STATE_MAINLAND_ZONES,
     CITY_STATE_MIN_MAINLAND_COMPONENT_SIZE,
     GetMap,
     MAP_HEIGHT,
     MAP_WIDTH
 } from '/codex-shattered-wonder-seas/maps/twin-discovery-wonder-seas-data.js';
-
-const CITY_STATE_BLOCKER_RESOURCE_TYPES = [
-    "RESOURCE_CLAY",
-    "RESOURCE_LIMESTONE",
-    "RESOURCE_GYPSUM",
-    "RESOURCE_MARBLE",
-    "RESOURCE_WILD_GAME",
-    "RESOURCE_HARDWOOD",
-    "RESOURCE_RICE",
-    "RESOURCE_MANGOS",
-    "RESOURCE_DATES",
-    "RESOURCE_COTTON",
-    "RESOURCE_HORSES",
-    "RESOURCE_IRON"
-];
 
 function requestMapData(initParams) {
     initParams.width = MAP_WIDTH;
@@ -75,15 +59,6 @@ function getMainlandZone(x, y) {
     return null;
 }
 
-function isInCityStateExclusionZone(x, y) {
-    for (const zone of CITY_STATE_EXCLUSION_ZONES) {
-        if (x >= zone.minX && x <= zone.maxX && y >= zone.minY && y <= zone.maxY) {
-            return true;
-        }
-    }
-    return false;
-}
-
 function isNearWonder(x, y, wonderRadius = CITY_STATE_EXCLUSION_RADIUS) {
     for (const wonder of CITY_STATE_EXCLUSION_WONDERS) {
         if (GameplayMap.getPlotDistance(x, y, wonder.x, wonder.y) <= wonderRadius) {
@@ -108,144 +83,6 @@ function isSettlableCityStatePlot(x, y) {
         !GameplayMap.isMountain(x, y) &&
         !GameplayMap.isNaturalWonder(x, y) &&
         GameplayMap.getResourceType(x, y) === ResourceTypes.NO_RESOURCE;
-}
-
-function getResourceIndex(resourceType) {
-    if (typeof GameInfo === "undefined" || !GameInfo.Resources) {
-        return ResourceTypes.NO_RESOURCE;
-    }
-
-    const resource = GameInfo.Resources.find((row) => row.ResourceType === resourceType);
-    return resource ? resource.$index : ResourceTypes.NO_RESOURCE;
-}
-
-function collectBlockerResourceIndexes() {
-    const indexes = [];
-    for (const resourceType of CITY_STATE_BLOCKER_RESOURCE_TYPES) {
-        const index = getResourceIndex(resourceType);
-        if (index !== ResourceTypes.NO_RESOURCE && !indexes.includes(index)) {
-            indexes.push(index);
-        }
-    }
-    return indexes;
-}
-
-function canHaveResourceSafe(x, y, resourceIndex) {
-    if (typeof ResourceBuilder === "undefined" || typeof ResourceBuilder.canHaveResource !== "function") {
-        return false;
-    }
-
-    try {
-        return ResourceBuilder.canHaveResource(x, y, resourceIndex, true);
-    } catch (_err) {
-        try {
-            return ResourceBuilder.canHaveResource(x, y, resourceIndex);
-        } catch (_innerErr) {
-            return false;
-        }
-    }
-}
-
-function placeBlockerResource(x, y, blockerResourceIndexes) {
-    if (GameplayMap.getResourceType(x, y) !== ResourceTypes.NO_RESOURCE ||
-            typeof ResourceBuilder === "undefined" || typeof ResourceBuilder.setResourceType !== "function") {
-        return false;
-    }
-
-    for (const resourceIndex of blockerResourceIndexes) {
-        if (canHaveResourceSafe(x, y, resourceIndex)) {
-            ResourceBuilder.setResourceType(x, y, resourceIndex);
-            return true;
-        }
-    }
-
-    if (blockerResourceIndexes.length > 0) {
-        ResourceBuilder.setResourceType(x, y, blockerResourceIndexes[0]);
-        return GameplayMap.getResourceType(x, y) !== ResourceTypes.NO_RESOURCE;
-    }
-
-    return false;
-}
-
-function tagIndependentExclusionPlot(x, y) {
-    if (typeof TerrainBuilder === "undefined" || typeof TerrainBuilder.addPlotTag !== "function" ||
-            typeof PlotTags === "undefined" || PlotTags.PLOT_TAG_ISLAND === undefined) {
-        return false;
-    }
-
-    TerrainBuilder.addPlotTag(x, y, PlotTags.PLOT_TAG_ISLAND);
-    return true;
-}
-
-function isIndependentSpawnExclusionPlot(x, y) {
-    return isInCityStateExclusionZone(x, y) || isNearWonder(x, y);
-}
-
-function isCandidateForIndependentBlocker(x, y, usedPlots) {
-    if (!isIndependentSpawnExclusionPlot(x, y) || !isSettlableCityStatePlot(x, y)) {
-        return false;
-    }
-
-    const plot = getPlotIndex(x, y);
-    if (usedPlots.has(plot)) {
-        return false;
-    }
-
-    if (typeof StartPositioner === "undefined" ||
-            typeof StartPositioner.getStartPositionScore !== "function") {
-        return true;
-    }
-
-    return StartPositioner.getStartPositionScore(x, y) > 0;
-}
-
-function reserveIndependentSpawnExclusionZones() {
-    if (typeof GameplayMap === "undefined" || typeof ResourceBuilder === "undefined" ||
-            typeof ResourceTypes === "undefined") {
-        console.log("TwinDiscoveryWonderSeas: independent exclusion resource pass unavailable.");
-        return;
-    }
-
-    const blockerResourceIndexes = collectBlockerResourceIndexes();
-    if (blockerResourceIndexes.length === 0) {
-        console.log("TwinDiscoveryWonderSeas: no blocker resources available for independent exclusion.");
-        return;
-    }
-
-    const usedPlots = collectUsedStartPlots();
-    let taggedPlots = 0;
-    let candidatePlots = 0;
-    let blockedPlots = 0;
-    let failedPlots = 0;
-
-    for (let y = 0; y < MAP_HEIGHT; y++) {
-        for (let x = 0; x < MAP_WIDTH; x++) {
-            if (!isIndependentSpawnExclusionPlot(x, y) || GameplayMap.isWater(x, y) ||
-                    GameplayMap.isMountain(x, y) || GameplayMap.isNaturalWonder(x, y)) {
-                continue;
-            }
-
-            if (tagIndependentExclusionPlot(x, y)) {
-                taggedPlots++;
-            }
-
-            if (!isCandidateForIndependentBlocker(x, y, usedPlots)) {
-                continue;
-            }
-
-            candidatePlots++;
-            if (placeBlockerResource(x, y, blockerResourceIndexes)) {
-                blockedPlots++;
-            } else {
-                failedPlots++;
-            }
-        }
-    }
-
-    console.log("TwinDiscoveryWonderSeas: independent spawn exclusion tagged=" + taggedPlots +
-        " candidates=" + candidatePlots +
-        " resourceBlocked=" + blockedPlots +
-        " failed=" + failedPlots);
 }
 
 function buildLandComponentSizes() {
@@ -443,7 +280,6 @@ function moveCityStatesAwayFromWonderIslands() {
 function generateMap() {
     forceTwinDiscoveryOptions();
     generateYnAMP("TwinDiscoveryWonderSeas", GetMap());
-    reserveIndependentSpawnExclusionZones();
     moveCityStatesAwayFromWonderIslands();
 }
 

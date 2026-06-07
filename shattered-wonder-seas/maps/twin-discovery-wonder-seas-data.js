@@ -186,12 +186,6 @@ export const CITY_STATE_EXCLUSION_WONDERS = [
     ...OCEAN_WONDERS.map(({ name, x, y }) => ({ name, x, y }))
 ];
 
-export const CITY_STATE_EXCLUSION_ZONES = [
-    { name: "central-isabella-wonder-island", minX: 50, maxX: 80, minY: 31, maxY: 54 },
-    { name: "north-wonder-satellite-islands", minX: 50, maxX: 82, minY: 18, maxY: 27 },
-    { name: "south-wonder-satellite-islands", minX: 50, maxX: 82, minY: 57, maxY: 74 }
-];
-
 export const CITY_STATE_MAINLAND_ZONES = [
     { name: "west", minX: 0, maxX: 47, minY: 13, maxY: 68 },
     { name: "east", minX: 91, maxX: 127, minY: 13, maxY: 68 }

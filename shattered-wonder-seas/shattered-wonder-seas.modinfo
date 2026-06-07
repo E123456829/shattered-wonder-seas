@@ -19,13 +19,14 @@
 	<ActionGroups>
 		<ActionGroup id="codex-shattered-wonder-seas-game" scope="game" criteria="always">
 			<Properties>
-				<LoadOrder>2500</LoadOrder>
+				<LoadOrder>9500</LoadOrder>
 			</Properties>
 			<Actions>
 				<UpdateDatabase>
 					<Item>data/shattered-wonder-seas.xml</Item>
 					<Item>data/twin-discovery-wonder-seas.xml</Item>
 					<Item>data/twin-discovery-force-wonders.sql</Item>
+					<Item>data/independent-low-military.xml</Item>
 				</UpdateDatabase>
 				<UpdateText>
 					<Item>text/en_us/MapText.xml</Item>

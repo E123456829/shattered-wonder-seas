@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<TribeTagSets>
+		<Update>
+			<Where TribeTagName="DEFAULT_SCOUT_TAGS"/>
+			<Set InitialUnitAmount="0" MaxUnitAmount="1"/>
+		</Update>
+		<Update>
+			<Where TribeTagName="DEFAULT_DEFENDER_TAGS"/>
+			<Set InitialUnitAmount="1" MaxUnitAmount="1"/>
+		</Update>
+		<Update>
+			<Where TribeTagName="DEFAULT_COMBAT_TAGS"/>
+			<Set InitialUnitAmount="0" MaxUnitAmount="1"/>
+		</Update>
+		<Update>
+			<Where TribeTagName="NAVAL_COMBAT_TAGS"/>
+			<Set InitialUnitAmount="0" MaxUnitAmount="1"/>
+		</Update>
+		<Update>
+			<Where TribeTagName="NAVAL_LAND_COMBAT_TAGS"/>
+			<Set InitialUnitAmount="0" MaxUnitAmount="1"/>
+		</Update>
+		<Update>
+			<Where TribeTagName="CRISIS_COMBAT_UNITS"/>
+			<Set InitialUnitAmount="0" MaxUnitAmount="1"/>
+		</Update>
+	</TribeTagSets>
+</Database>
