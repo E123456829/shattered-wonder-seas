@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameEffects xmlns="GameEffects">
+	<Modifier id="SHATTERED_WONDER_SEAS_GRANT_MINOR_CIV_COMBAT" collection="COLLECTION_PLAYER_UNITS" effect="EFFECT_UNIT_ADJUST_ABILITY" permanent="true">
+		<OwnerRequirements>
+			<Requirement type="REQUIREMENT_PLAYER_IS_HUMAN"/>
+		</OwnerRequirements>
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_UNIT_TAG_MATCHES">
+				<Argument name="Tag">UNIT_CLASS_COMBAT</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="AbilityType">ABILITY_INDEPENDENT_COMBAT_MAJOR</Argument>
+	</Modifier>
+	<Modifier id="SHATTERED_WONDER_SEAS_GRANT_INDEPENDENT_COMBAT" collection="COLLECTION_PLAYER_UNITS" effect="EFFECT_UNIT_ADJUST_ABILITY" permanent="true">
+		<OwnerRequirements>
+			<Requirement type="REQUIREMENT_PLAYER_IS_HUMAN"/>
+		</OwnerRequirements>
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_UNIT_TAG_MATCHES">
+				<Argument name="Tag">UNIT_CLASS_COMBAT</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="AbilityType">ABILITY_INDEPENDENT_COMBAT_MINOR</Argument>
+	</Modifier>
+	<Modifier id="SHATTERED_WONDER_SEAS_MINOR_CIV_COMBAT_BONUS" collection="COLLECTION_UNIT_COMBAT" effect="EFFECT_ADJUST_UNIT_STRENGTH_MODIFIER">
+		<OwnerRequirements>
+			<Requirement type="REQUIREMENT_PLAYER_IS_HUMAN"/>
+		</OwnerRequirements>
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_OPPONENT_IS_MINOR_CIV"/>
+		</SubjectRequirements>
+		<Argument name="Amount">45</Argument>
+		<String context="Preview">LOC_ABILITY_INDEPENDENT_COMBAT_MAJOR_DESCRIPTION</String>
+	</Modifier>
+	<Modifier id="SHATTERED_WONDER_SEAS_INDEPENDENT_COMBAT_BONUS" collection="COLLECTION_UNIT_COMBAT" effect="EFFECT_ADJUST_UNIT_STRENGTH_MODIFIER">
+		<OwnerRequirements>
+			<Requirement type="REQUIREMENT_PLAYER_IS_HUMAN"/>
+		</OwnerRequirements>
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_OPPONENT_IS_INDEPENDENT"/>
+		</SubjectRequirements>
+		<Argument name="Amount">47</Argument>
+		<String context="Preview">LOC_ABILITY_INDEPENDENT_COMBAT_MINOR_DESCRIPTION</String>
+	</Modifier>
+</GameEffects>

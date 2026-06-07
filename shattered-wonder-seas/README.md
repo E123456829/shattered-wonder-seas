@@ -15,9 +15,9 @@ The main showcase map:
 - Shallow-sea access from the central island to the western continent.
 - Long rivers, lakes, bays, satellite islands, inland seas, and island chains.
 - AI true-start positions distributed across the two major continents.
-- Independent military pressure reduced to very small unit groups, with a
-  mainland relocation fallback when the game exposes city-state or independent
-  starts early enough.
+- Independent military pressure reduced with small unit groups, a human-player
+  +50 combat bonus against city-state/independent units, and a mainland
+  relocation fallback when the game exposes those starts early enough.
 - 19 curated natural wonders, with additional terrain stabilization for coastal,
   ocean, mountain, and waterfall wonders.
 
@@ -52,6 +52,6 @@ Then enable the mod in-game and select one of the added maps.
 - Old saves may retain older mod dependency metadata from previous builds.
 - The curated natural-wonder mode is forced to real-only for these maps, so failed
   curated wonder placements do not get replaced by unrelated random wonders.
-- Independent/city-state military unit caps are deliberately lowered for this
-  map to avoid heavy garrisons around the central wonder island and satellite
-  islands.
+- Independent/city-state unit caps are deliberately lowered, and human players
+  receive a large combat bonus against their military units to
+  keep wonder-island starts from being locked down by nearby garrisons.

@@ -27,6 +27,7 @@
 					<Item>data/twin-discovery-wonder-seas.xml</Item>
 					<Item>data/twin-discovery-force-wonders.sql</Item>
 					<Item>data/independent-low-military.xml</Item>
+					<Item>data/independent-combat-bonus-gameeffects.xml</Item>
 				</UpdateDatabase>
 				<UpdateText>
 					<Item>text/en_us/MapText.xml</Item>

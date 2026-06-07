@@ -11,7 +11,7 @@
 		</Update>
 		<Update>
 			<Where TribeTagName="DEFAULT_COMBAT_TAGS"/>
-			<Set InitialUnitAmount="0" MaxUnitAmount="1"/>
+			<Set InitialUnitAmount="0" MaxUnitAmount="2"/>
 		</Update>
 		<Update>
 			<Where TribeTagName="NAVAL_COMBAT_TAGS"/>
@@ -19,11 +19,19 @@
 		</Update>
 		<Update>
 			<Where TribeTagName="NAVAL_LAND_COMBAT_TAGS"/>
-			<Set InitialUnitAmount="0" MaxUnitAmount="1"/>
+			<Set InitialUnitAmount="0" MaxUnitAmount="2"/>
 		</Update>
 		<Update>
 			<Where TribeTagName="CRISIS_COMBAT_UNITS"/>
 			<Set InitialUnitAmount="0" MaxUnitAmount="1"/>
 		</Update>
 	</TribeTagSets>
+	<UnitAbilityModifiers>
+		<Row UnitAbilityType="ABILITY_INDEPENDENT_COMBAT_MAJOR" ModifierId="SHATTERED_WONDER_SEAS_MINOR_CIV_COMBAT_BONUS"/>
+		<Row UnitAbilityType="ABILITY_INDEPENDENT_COMBAT_MINOR" ModifierId="SHATTERED_WONDER_SEAS_INDEPENDENT_COMBAT_BONUS"/>
+	</UnitAbilityModifiers>
+	<TraitModifiers>
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="SHATTERED_WONDER_SEAS_GRANT_MINOR_CIV_COMBAT"/>
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="SHATTERED_WONDER_SEAS_GRANT_INDEPENDENT_COMBAT"/>
+	</TraitModifiers>
 </Database>
