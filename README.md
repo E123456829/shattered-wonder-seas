@@ -35,6 +35,8 @@ maps and YnAMP options.
   seas, shallow channels, and long navigable river systems.
 - True-start-location tuning for many civilizations so AI players spawn on the
   two main continents rather than on the home island or satellite islands.
+- Post-generation city-state and independent-start relocation away from wonder
+  islands and natural-wonder exclusion zones.
 - Localized English and Simplified Chinese map text.
 - Mod packaging for the Civilization VII Mods directory, with only `base-standard`
   and `ged-ynamp` as hard dependencies.

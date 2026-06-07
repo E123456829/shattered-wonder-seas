@@ -15,6 +15,8 @@ The main showcase map:
 - Shallow-sea access from the central island to the western continent.
 - Long rivers, lakes, bays, satellite islands, inland seas, and island chains.
 - AI true-start positions distributed across the two major continents.
+- City-state and independent starts nudged away from the wonder island,
+  satellite islands, and nearby natural wonders.
 - 19 curated natural wonders, with additional terrain stabilization for coastal,
   ocean, mountain, and waterfall wonders.
 

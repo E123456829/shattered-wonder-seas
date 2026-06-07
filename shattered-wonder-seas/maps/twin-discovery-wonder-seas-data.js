@@ -178,6 +178,21 @@ const OCEAN_WONDERS = [
     { name: "Bermuda Triangle", x: 69, y: 76 }
 ];
 
+export const CITY_STATE_EXCLUSION_RADIUS = 6;
+
+export const CITY_STATE_EXCLUSION_WONDERS = [
+    ...WONDER_TERRAIN.map(({ name, x, y }) => ({ name, x, y })),
+    ...COASTAL_WONDERS.map(({ name, x, y }) => ({ name, x, y })),
+    ...OCEAN_WONDERS.map(({ name, x, y }) => ({ name, x, y }))
+];
+
+export const CITY_STATE_MAINLAND_ZONES = [
+    { name: "west", minX: 0, maxX: 47, minY: 13, maxY: 68 },
+    { name: "east", minX: 91, maxX: 127, minY: 13, maxY: 68 }
+];
+
+export const CITY_STATE_MIN_MAINLAND_COMPONENT_SIZE = 180;
+
 function makeRow(terrain, continent = -1, feature = FEATURE.NONE) {
     return [
         terrain,

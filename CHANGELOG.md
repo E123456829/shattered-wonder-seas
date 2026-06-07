@@ -3,6 +3,15 @@
 This changelog reconstructs the major local iteration milestones before the
 first public GitHub release.
 
+## v0.6.0 - 2026-06-07
+
+- Added a post-generation relocation pass for city-state and independent-power
+  starts on `Twin Discovery Wonder Seas`.
+- Steered city-state and independent starts away from the central wonder island,
+  satellite wonder islands, and natural-wonder exclusion zones.
+- Selected mainland fallback candidates from the two large continents and
+  balanced them between west and east where possible.
+
 ## v0.5.0 - 2026-06-07
 
 - Prepared the project for public sharing on GitHub.
